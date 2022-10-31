@@ -110,7 +110,7 @@ public sealed class SecsGem : ISecsGem, IDisposable
         }
         catch (SocketException)
         {
-            _hsmsConnector.Reconnect();
+            // _hsmsConnector.Reconnect();
             throw;
         }
 #if NET6_0

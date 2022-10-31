@@ -59,6 +59,14 @@ public record SecsGemOptions
     /// </summary>
     public int LinkTestInterval { get; init; } = 60000;
 
+    
+    /// <summary>
+    /// Configure the timer interval in milliseconds between each Re-connection.
+    /// Default value is 10000.
+    /// </summary>
+    
+    public int ReconnectInterval { get; init; } = 10000;
+    
     /// <summary>
     /// Configure a value that specifies the size of the receive buffer of the System.Net.Sockets.Socket.
     /// Default value is 8192 bytes.
